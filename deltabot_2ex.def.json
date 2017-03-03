@@ -1,6 +1,6 @@
 {
   "id": "deltabot_2ex",
-  "name": "DeltaBot 2ex",
+  "name": "deltabot_2ex",
   "version": 2,
     "inherits": "fdmprinter",
     "metadata": {
@@ -19,7 +19,7 @@
 		"platform_offset": [ 0, 0, 0]
 	},
     "overrides": {
-		"machine_name": 			{ "default_value": "DeltaBot 2Ex" },
+		"machine_name": 			{ "default_value": "Deltabot 2Ex" },
 		"material_diameter": 		{ "default_value": 1.75 },
 		"speed_travel": 			{ "default_value": 150 },
 		"prime_tower_size": 		{ "default_value": 8.66 },

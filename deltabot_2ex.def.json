@@ -13,8 +13,8 @@
 		"file_formats": "text/x-gcode", 
 		"machine_extruder_trains":
         {
-            "0": "Delta_Y_extruder_0",
-            "1": "Delta_Y_extruder_1"
+            "0": "delta_y_extruder_0",
+            "1": "delta_y_extruder_1"
         },
 		"platform_offset": [ 0, 0, 0]
 	},

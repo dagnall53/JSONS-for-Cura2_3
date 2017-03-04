@@ -1,5 +1,5 @@
 {
-    "id": "delta_y_extruder_1",
+    "id": "delta_y_extruder_0",
     "version": 2,
     "name": "Right",
     "inherits": "fdmextruder",

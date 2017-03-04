@@ -57,8 +57,8 @@
 		"machine_gcode_flavor": 	{
 		"default_value": "RepRap (Marlin/Sprinter)" 
 			},
-		"machine_start_gcode":      { 
-			"default_value": "G21 ;metric values\nG90 ;absolute positioning\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG28 ;Home all axes (max endstops)\nG29 ; Bed level\nG1 F600 E190 ;extrude 190mm of feed stock that was retracted at end \nG1 F50 E7.5 ; should take up slack in bowden\nG92 E0 ;zero the extruded length again\n;Put printing message on LCD screen\nM117 Printing..." 
+     "machine_start_gcode": {
+            "default_value": "G21 ;metric values\nG90 ;absolute positioning\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG28 ;Home all axes (max endstops) \nG29 ; auto level \nG1 E190.0 F600 ; extrude filament from home position\nG92 E0 ;zero the extruded length\nG1 F200 E7.5 ;extrude 7.5mm of feed stock\nG92 E0 ;zero the extruded length again\nG1 F9000\n;Put printing message on LCD screen\nM117 Printing..."
 			},
         "machine_end_gcode":        { 
 			"default_value": "M104 S0 ;extruder heater off\nM140 S0 ;heated bed heater off (if you have it)\nG91 ;relative positioning\nG1 E-190 F600  ;retract the filament to starting position\nG28 ;Home all axes (max endstops)\nM84 ;steppers off\nG90 ;absolute positioning" 

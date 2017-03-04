@@ -1,19 +1,44 @@
 {
     "id": "delta_y_extruder_0",
     "version": 2,
-    "name": "0",
+    "name": "Left",
     "inherits": "fdmextruder",
     "metadata": {
         "machine": "deltabot_2ex",
-        "position": "0"
+        "position": "1"
     },
 
     "overrides": {
         "extruder_nr": {
-            "default_value": 0,
+            "default_value": 1,
             "maximum_value": "1"
         },
-        "machine_nozzle_offset_x": { "default_value": 0.0 },
-        "machine_nozzle_offset_y": { "default_value": 0.0 }
+        "machine_nozzle_offset_x": { 
+			"default_value": 0.0 },
+        "machine_nozzle_offset_y": { 
+			"default_value": 0.0 },
+		"machine_extruder_start_pos_abs": { 
+			"default_value": true 
+			},
+        "machine_extruder_start_pos_x": { 
+			"value": "prime_tower_position_x" 
+			},
+        "machine_extruder_start_pos_y": { 
+			"value": "prime_tower_position_y" 
+			},
+        "machine_extruder_end_pos_abs": { 
+			"default_value": true },
+        "machine_extruder_end_pos_x": { 
+			"value": "prime_tower_position_x" 
+			},
+        "machine_extruder_end_pos_y": { 
+			"value": "prime_tower_position_y" 
+			},
+		"machine_extruder_end_code":  { 
+			"value":  " ; code from end left extruder \nG1 E-190 F600  ;retract the filament to starting position \n"
+			},
+		"machine_extruder_start_code": { 
+			"value": " ; code from left extruder start \nG1 E190 F600 ; extend filament fast \nG1 E7.5 F50 ; And take up slack.. \n"
+			}
     }
 }

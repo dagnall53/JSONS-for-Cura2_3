@@ -38,10 +38,10 @@
 			"value": "prime_tower_position_y" 
 			},
 		"machine_extruder_end_code":  { 
-			"value":  " ; code from end right extruder \nG1 E-190 F600  ;retract the filament to starting position \n"
+			"value":  " ; code from end right extruder \nG1 E-190 F600  ;retract the filament to starting position \n ;end of end right gcode"
 			},
 		"machine_extruder_start_code": { 
-			"value": " ; code from right extruder \nG1 E190 F600 ; extend filament fast \nG1 E7.5 F50 ; And take up slack.. \n"
+			"value": " ; code from right extruder \nG1 E190 F600 ; extend filament fast \nG1 E7.5 F50 ; And take up slack.. \n ;end of start right gcode"
 			}
     }
 }

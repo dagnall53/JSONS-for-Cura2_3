@@ -1,10 +1,8 @@
-# JSONS-for-Cura2_3
-Trying to add definitions to Cura2.3 to add a dual extrusion delta 
+# JSONS-for-Cura2_4
+Definitions for Cura2.4 to add a dual extrusion "Flux capacitor" type delta 
  
  Save the extruders in /extruders
  Save the printer in /definitions
  
- Currently (5 march 2017) the "machine_extruder_start_code"and "machine_extruder_end_code"
- elements are NOT being processed in Cura 2.4 and are NOT resulting in G code before and after the Extruder switches.
- 
- Unclear if this is a Cura issue or something in my coding. 
+If you need to change the Gcodes , do so in the Json, as Cura does not have an inbuilt editor for Gcode and dual extruders.
+

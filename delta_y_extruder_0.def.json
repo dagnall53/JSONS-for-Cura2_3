@@ -22,10 +22,10 @@
          "default_value": true
       },
 	  "machine_extruder_start_code": { 
-			"value": "G1 E190 F600 ; extend filament fast \nG1 E7.5 F50 ; and take up slack"
+			"default_value": "G1 E190 F600 ; extend filament fast \nG1 E7.5 F50 ; and take up slack"
 	  },
 	  "machine_extruder_end_code":  { 
-			"value":  "G1 E-190 F600  ;retract the filament to starting position"
+			"default_value":  "G1 E-190 F600  ;retract the filament to starting position"
 	  }
 	}
 }

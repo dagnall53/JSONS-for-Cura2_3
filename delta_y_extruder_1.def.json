@@ -1,0 +1,25 @@
+{
+   "id": "delta_y_extruder_1",
+   "version": 2,
+   "name": "Left",
+   "inherits": "fdmextruder",
+   "metadata": {
+      "machine": "delta_K_2ex",
+      "position": "1"
+   },
+   "overrides": {
+      "extruder_nr": {
+         "default_value": 1,
+         "maximum_value": "1"
+      },
+      "machine_nozzle_offset_x": {
+         "default_value": 0.0
+      },
+      "machine_nozzle_offset_y": {
+         "default_value": 0.0
+      },
+      "machine_extruder_start_pos_abs": {
+         "default_value": true
+      }
+   }
+}

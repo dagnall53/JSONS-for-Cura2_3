@@ -56,10 +56,10 @@
          "default_value": "RepRap (Marlin/Sprinter)"
       },
       "machine_start_gcode": {
-         "default_value": "G21 ;metric values\nG90 ;absolute positioning\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG28 ;Home all axes (max endstops) \nG29 ; auto level \nG1 E190.0 F600 ; extrude filament from home position\nG92 E0 ;zero the extruded length\nG1 F200 E7.5 ;extrude 7.5mm of feed stock\nG92 E0 ;zero the extruded length again\nG1 F9000\n;Put printing message on LCD screen\nM117 Printing..."
+         "default_value": "G21 ;metric values\nG90 ;absolute positioning\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG28 ;Home all axes (max endstops) \nG29 ; auto level \nM117 Setup extruder 1 \nT1 ;EXTRUDER 1 \nG1 E160 F600 \nG92 E0 \nG1 E25 F100 ; take up slack AND extrude 5mm of feed stock G92 E0 \nG1 E-10 F600 \nG92 E0 \nG92 P5000 \nG1 E10 F2000 \nG92 E0 \nG1 E-10 F2000 \nG92 E0 \nG1 E-170 F10000 \nG92 E0 \nT0 ; Extruder 0 \nG1 E160 F600 \nG92 E0  \nG1 E25 F100 ; take up slack  and Extrude 5mm of feed stock\nG92 E0 \nG1 F9000\n; Set speed and put printing message on LCD screen \nM117 Printing..."
       },
       "machine_end_gcode": {
-         "default_value": "M104 S0 ;extruder heater off\nM140 S0 ;heated bed heater off (if you have it)\nG91 ;relative positioning\nG1 E-190 F600  ;retract the filament to starting position\nG28 ;Home all axes (max endstops)\nM84 ;steppers off\nG90 ;absolute positioning"
+         "default_value": "nM117 retract ex 0...\G92 E0 \nG1 E-10 F600 \nG92 E0 \nG92 P5000 \nG1 E10 F2000 \nG92 E0 \nG1 E-10 F2000 \nG92 E0 \nG1 E-170 F10000 \nG92 E0" \nM104 S0 ;extruder heater off\nM140 S0 ;heated bed heater off \nG91 ;relative positioning \nG28 ;Home all axes (max endstops)\nM84 ;steppers off\nG90 ;absolute positioning"
       },
       "machine_shape": {
          "default_value": "elliptic"

@@ -56,9 +56,10 @@
          "default_value": "RepRap (Marlin/Sprinter)"
       },
       "machine_start_gcode": {
-         "default_value": "G21 ;metric values\nG90 ;absolute positioning\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG28 ;Home all axes (max endstops) \nG29 ; auto level \nG1 X-50 Y-90 Z30 ; place to spit out filament\nM117 Setup extruder 1 \nT1 ;EXTRUDER 1 \nG1 E160 F600 \nG92 E0 \nG1 E25 F100 ; take up slack AND extrude 5mm of feed stock G92 E0 \nG1 E-10 F600 \nG92 E0 \nG92 P5000 \nG1 E10 F2000 \nG92 E0 \nG1 E-10 F2000 \nG92 E0 \nG1 E-170 F10000 \nG92 E0 \nT0 ; Extruder 0 \nG1 E160 F600 \nG92 E0  \nG1 E25 F100 ; take up slack  and Extrude 5mm of feed stock\nG92 E0 \nG1 X0 Y0 Z100 ; start in middle \nG1 F9000\n; Set speed and put printing message on LCD screen \nM117 Printing..."
+         "default_value": "G21 ;metric values\nG90 ;absolute positioning\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG28 ;Home all axes (max endstops) \nG29 ; auto level \nT0 \n machine_extruder_start_code \nG1 F9000\n; Set speed and put printing message on LCD screen \nM117 Printing..."
       },
-	  "machine_end_gcode": {
+	  
+      "machine_end_gcode": {
          "default_value": "nM117 retract ex 0...\nG92 E0 \nG1 E-10 F600 \nG92 E0 \nG92 P5000 \nG1 E10 F2000 \nG92 E0 \nG1 E-10 F2000 \nG92 E0 \nG1 E-170 F10000 \nG92 E0 \nM104 S0 ;extruder heater off\nM140 S0 ;heated bed heater off \nG91 ;relative positioning \nG28 ;Home all axes (max endstops)\nM84 ;steppers off\nG90 ;absolute positioning"
       },
       "machine_shape": {

@@ -1,5 +1,5 @@
-# JSONS-for-Cura2_4
-Definitions for Cura2.4 to add a dual extrusion "Flux capacitor" type delta 
+# JSONS-for-Cura2_4- and 2.5 
+Definitions for Cura2.4 (on) to add a dual extrusion "Flux capacitor" type delta 
  
  Save the extruders in /extruders
  Save the printer in /definitions

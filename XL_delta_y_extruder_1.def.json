@@ -1,7 +1,7 @@
 {
    "id": "XL_delta_y_extruder_1",
    "version": 2,
-   "name": "Left",
+   "name": "EX_1",
    "inherits": "fdmextruder",
    "metadata": {
       "machine": "XL_Delta",
@@ -37,10 +37,10 @@
          "value": "prime_tower_position_y"
       },
 	   "machine_extruder_start_code": {
-         "default_value": "G92 E0\nG91 ; set relative \nG1 X5 Y5 Z5 \nG1 E160 F600 \nG92 E0 \nG1 E25 F100 ; and take up slack \nG1 X-5 Y-5 Z-5 \nG90 ; back to absolute  \nG92 E0"
+         "default_value": "M117 Ex 1 start\nG92 E0\nG91 ; set relative \nG1 E160 F600 \nG92 E0 \nG1 E25 F100 ; and take up slack \nG90 ; back to absolute  \nG92 E0"
       },
        "machine_extruder_end_code": {
-         "default_value": "G92 E0 \nG1 E-10 F600 \nG92 E0 \nG92 P1000 \nG1 E8 F1000 \nG92 E0 \nG2 P500 \nG1 E-8 F1000 \nG92 E0 \nG1 E-170 F5000 \nG92 E0"
+         "default_value": "M117 Ex 1 end\nG92 E0 \nG1 E-10 F600 \nG92 E0 \nG92 P1000 \nG1 E8 F1000 \nG92 E0 \nG2 P500 \nG1 E-8 F1000 \nG92 E0 \nG1 E-170 F5000 \nG92 E0"
       }
 	}
 }
